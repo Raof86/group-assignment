@@ -10,6 +10,8 @@
 </head>
 <body>
     <nav id="navbar-container">
+        <a href="#"><img src="images/hamburger-menu.png" id="hamburger-menu"></a>
+        <h1 id="logotext">OurNews</h1>
         <ul id="navlinks">
             <li><a href="">Home</a></li>
             <li><a href="">Politics</a></li>
@@ -17,6 +19,12 @@
             <li><a href="">Sports</a></li>
             <li><a href="">Culture</a></li>
         </ul>
+        <div id="search-container">
+            <form action="action_page.php">
+              <input type="text" placeholder="Sök" name="search">
+              <a href="#"><img src="images/search.png" id="searchimg" /></a>
+            </form>
+        </div>
     </nav>
     <section id="non-menu" onclick="document.getElementById('navbar-container').style.top = '-150px'">
     <div id="body-container">
