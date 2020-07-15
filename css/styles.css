@@ -1,0 +1,27 @@
+#body-container {
+    width: 1200px;    
+    height: auto;
+    min-height: 1000px;
+    background-color: lightgray;
+    margin: auto auto;
+}
+
+nav, main, footer {
+    border: 5px solid black;
+    margin: 2px 0;
+}
+
+nav {
+    width: auto;
+    height: 100px;
+}
+
+main {
+    width: auto;
+    height: 500px;
+}
+
+footer {
+    width: auto;
+    height: 150px;
+}
