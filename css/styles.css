@@ -49,7 +49,6 @@ nav {
 
 #navlinks {
     width: fit-content;
-    display: block;
     margin: 0 auto;
 }
 
@@ -69,6 +68,41 @@ nav {
 
 #navlinks li a:hover {
     color: gray;
+}
+
+#hamburger-menu {
+    position: absolute;
+    height: 22px;
+    top: 22px;
+    left: 250px;
+}
+
+#logotext {
+    position: absolute;
+    top: -5px;
+    left: 325px;
+    line-height: 70px;
+    margin: 0;
+}
+
+#search-container {
+    position: absolute;
+    top: 16px;
+    right: 10%;
+}
+
+form input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 5px;
+    outline: none;
+}
+
+#searchimg {
+    position: relative;
+    top: 5px;
+    height: 24px;
 }
 
 #non-menu {
@@ -123,11 +157,32 @@ footer {
     grid-area: footer;
 }
 
-/* @media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1600px) {
+    #navlinks {
+        position: absolute;
+        left: 230px;
+        width: 560px;
+    }
+    #hamburger-menu {
+        left: 10px;
+    }
+    #logotext {
+        left: 70px;
+    }
+    #navlinks li {
+        margin: auto 5px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (max-width: 1131px) {
+    form input {
+    display: none;
+    }
+}
 
+@media screen and (max-width: 839px) {
+    #searchimg {
+        display: none;
+    }
 
-} */
+}
