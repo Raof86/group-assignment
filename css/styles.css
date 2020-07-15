@@ -23,16 +23,19 @@ nav, main, footer {
 main {
 
     grid-area: main;
+    height: 100%;
 }
 
 nav {
     
     grid-area: nav;
+    height: 100%;
 }
 
 footer {
     
     grid-area: footer;
+    height: 87%;
 }
 
 /* @media screen and (max-width: 1200px) {
