@@ -30,9 +30,13 @@ nav {
 
 main {
     grid-area: main;
+    
+}
+main a{
+    text-decoration: none;
 }
 
-#mainhead{
+#mainHead{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(20px, auto);
@@ -43,18 +47,28 @@ main {
     align-items: stretch;
 }
 
-#mainhead img{
+#mainHead img{
     width: 100%;
+    height: 100%;
 }
 
-#mainheadleft{
+#mainHeadLeft{
     grid-area: left;
+    padding: 3% 2%;
 }
-#mainheadcenter{
+#mainHeadCenter{
     grid-area: center;
+    padding: 3% 0;
 }
-#mainheadright{
+
+#mainpic1:hover > div#mainHeadLeft img{
+    display: none;
+}
+
+
+#mainHeadRight{
     grid-area: right;
+    padding: 5% 5% 5% 0%;
 }
 
 footer {
