@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
+    <nav id="navbar-container">
+        <ul id="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Politics</a></li>
+            <li><a href="">Economy</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+    </nav>
+    <section id="non-menu" onclick="document.getElementById('navbar-container').style.top = '-150px'">
     <div id="body-container">
-        <nav>
-nav
-        </nav>
         <main>
             <div id="mainHead">
                 <div id="mainHeadLeft">
@@ -33,6 +41,6 @@ nav
 footer
         </footer>
     </div>
-    
+    </section>
 </body>
 </html>
