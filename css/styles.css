@@ -39,6 +39,14 @@ nav {
     border-right:0;
 }
 
+#navbar-hover {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+}
+
 #navlinks {
     width: fit-content;
     display: block;
@@ -61,6 +69,11 @@ nav {
 
 #navlinks li a:hover {
     color: gray;
+}
+
+#non-menu {
+    height: 100%;
+    width: 100%;
 }
 
 main {
