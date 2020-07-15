@@ -1,8 +1,11 @@
+/* body {
+	background: url(img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+    min-height: 90vh;
+} */
+
 #body-container {
     width: 1200px;    
-    height: auto;
-    min-height: 1000px;
-    background-color: lightgray;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -17,25 +20,18 @@
 
 nav, main, footer {
     border: 2px solid black;
-
-}
-
-main {
-
-    grid-area: main;
-    height: 100%;
 }
 
 nav {
-    
     grid-area: nav;
-    height: 100%;
+}
+
+main {
+    grid-area: main;
 }
 
 footer {
-    
     grid-area: footer;
-    height: 87%;
 }
 
 /* @media screen and (max-width: 1200px) {
