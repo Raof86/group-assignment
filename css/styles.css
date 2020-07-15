@@ -1,23 +1,22 @@
 #body-container {
     width: 1200px;    
     height: auto;
-    min-height: 1000px;
     background-color: lightgray;
-    margin: auto;
+    margin: auto auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(auto, auto);
+    grid-auto-rows: minmax(200px, auto);
     grid-template-areas: 
 		"nav nav nav nav nav nav nav nav nav nav nav nav"
 		"main main main main main main main main main main main main"
 		"footer footer footer footer footer footer footer footer footer footer footer footer";
 		
-	row-gap: 2%;
+    row-gap: 1%;
+    
 }
 
 nav, main, footer {
-    border: 2px solid black;
-
+    border: 1px solid black;
 }
 
 main {
