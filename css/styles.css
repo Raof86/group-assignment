@@ -4,10 +4,6 @@
     min-height: 90vh;
 } */
 
-body {
-    min-height: 130vh; /* test, ta bort sen */
-}
-
 #body-container {
     width: 1200px;    
     background-color: lightgray;
@@ -16,17 +12,16 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(auto, auto);
     grid-template-areas: 
-		"main main main main main main main main main main main main"
-		"footer footer footer footer footer footer footer footer footer footer footer footer";
+		"main main main main main main main main main main main main";
     row-gap: 1%;
 }
 
-main, footer {
+main {
     border: 2px solid black;
 }
 
 nav {
-    position: sticky;  /* ändrade denna till sticky så det inte överlappar (iman) */
+    position: sticky;
     width: 100%;
     grid-area: nav;
     background-color: white;
@@ -106,22 +101,18 @@ form input {
 }
 
 #non-menu {
-    height: 100%;
     width: 100%;
 }
-
-
-
 
 main {
     grid-area: main;
     
 }
-main a{
+main a {
     text-decoration: none;
 }
 
-#mainHead{
+#mainHead {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(20px, auto);
@@ -131,19 +122,19 @@ main a{
         "left left center right";
 }
 
-#mainHead img{
+#mainHead img {
     width: 100%;
     height: 100%;
 }
-#mainHeadLeft{
+#mainHeadLeft {
     grid-area: left;
     padding: 3% 2%;
 }
-#mainHeadCenter{
+#mainHeadCenter {
     grid-area: center;
     padding: 3% 0;
 }
-#mainHeadRight{
+#mainHeadRight {
     grid-area: right;
     padding: 5% 5% 5% 0%;
 }
@@ -153,17 +144,17 @@ main a{
 #slideInit {
     display: block;
 }
-.slideImages img{
+.slideImages img {
     width: 100%;
     height: 100px;   
 }
-#firstAddContainer{
+#firstAddContainer {
     margin: 5px auto;
     width: 98%;
     height: 100px;
     background-color: lightgreen;
 }
-#mainCenter{
+#mainCenter {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-auto-rows: minmax(200px, auto);
@@ -173,21 +164,22 @@ main a{
         "third third third third third third third third third third third";
 }
 
-#mainFirstRow{
+#mainFirstRow {
     grid-area: first;
 }
-#mainSecondRow{
+#mainSecondRow {
     grid-area: second;
 }
-#mainThirdRow{
+#mainThirdRow {
     grid-area: third;
 }
 
-
-
-
 footer {
-    grid-area: footer;
+    width: 100%;
+    background-color: rgb(75, 75, 75);
+    height: 300px;
+    position: relative;
+    bottom: 0px;
 }
 
 @media screen and (max-width: 1600px) {
