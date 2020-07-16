@@ -4,6 +4,15 @@
     min-height: 90vh;
 } */
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
 #body-container {
     width: 1200px;    
     background-color: lightgray;
@@ -187,10 +196,55 @@ main a {
 footer {
     width: 100%;
     background-color: rgb(51, 51, 51);
-    height: 300px;
+    height: fit-content;
     position: relative;
     bottom: 0px;
 }
+
+footer div {
+    margin: 40px 5vw 40px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer a {
+    color: white;
+}
+
+.footersection {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top-footer {
+    height: 30px;
+}
+
+#top-footer img {
+    height: 22px;
+    margin: 10px 5px 10px 0;
+}
+
+#middle-footer {
+    height: calc(100% - 80px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bottom-footer {
+    height: 50px;
+    text-align: center;
+    color: rgb(172, 172, 172);
+}
+
+.bottomlinks {
+    width: fit-content;
+    margin: 0;
+}
+
 
 @media screen and (max-width: 1600px) {
     #navlinks {
