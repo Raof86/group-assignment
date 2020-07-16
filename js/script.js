@@ -14,10 +14,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-
-
 //Funktoiner för att ändra bilder på index.html vid mouseover/mouseout
-
 function setMHImage1(){
   document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder1.bmp";
 }
@@ -39,19 +36,15 @@ function setMHImage5(){
 }
 
 function setMHInitialImage(){
-
   document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder1.bmp";
-
 }
-
-
 
 //Script för reklamslides
 var slideIndex = 0;
 slideShow();
 
 function slideShow() {  
-  setTimeout(slideShow, 2000);
+  setTimeout(slideShow, 4000);
   var i;
   var slides = document.getElementsByClassName("slideImages");
   for(i = 0; i < slides.length; i++){
@@ -61,8 +54,6 @@ function slideShow() {
   if(slideIndex > slides.length){
     slideIndex = 1;
   }
-  slides[slideIndex-1].style.display = "block";  
- 
- 
+  slides[slideIndex-1].style.display = "block";   
 }
 
