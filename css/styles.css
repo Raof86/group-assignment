@@ -166,31 +166,32 @@ main a{
 #mainCenter{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "first second third"
         "first second third";
     margin: 15px 0px;
     padding: 1% 1%;
     grid-column-gap: 5%;
     grid-row-gap: 10px;
     background-color: rgba(25, 181, 254, 0.1);
-    }
+}
 
 
 
 #mainFirstRow{
     grid-area: first;
+    display: flex;
+    flex-direction: column;
 }
 
-#mainFirstRow img{ 
-    height: 50%;
-}
 #mainSecondRow{
     grid-area: second;
+    display: flex;
+    flex-direction: column;
 }
 #mainThirdRow{
     grid-area: third;
+    display: flex;
+    flex-direction: column;
 }
 
 
