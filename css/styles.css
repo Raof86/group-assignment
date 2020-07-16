@@ -208,14 +208,26 @@ footer {
 }
 
 @media screen and (max-width: 1131px) {
-    form input {
-    display: none;
+    #navlinks li {
+        line-height: 30px;
+    }
+    #search-container {
+        top: 30px;
+        right: 2%;
     }
 }
 
-@media screen and (max-width: 839px) {
-    #searchimg {
+@media screen and (max-width: 785px) {
+    #navlinks {
         display: none;
     }
+    #search-container {
+        top: 16px;
+    }
+}
 
+@media screen and (max-width: 468px) {
+    form input {
+        display: none;
+    }
 }
