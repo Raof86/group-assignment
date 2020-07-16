@@ -26,7 +26,7 @@ main, footer {
 }
 
 nav {
-    position: fixed;
+    position: sticky;  /* ändrade denna till sticky så det inte överlappar (iman) */
     width: 100%;
     grid-area: nav;
     background-color: white;
@@ -126,7 +126,6 @@ main a{
         "left left center right"
         "left left center right"
         "left left center right";
-    align-items: stretch;
 }
 
 #mainHead img{
@@ -143,15 +142,37 @@ main a{
     padding: 3% 0;
 }
 
-#mainpic1:hover > div#mainHeadLeft img{
-    display: none;
-}
-
-
 #mainHeadRight{
     grid-area: right;
     padding: 5% 5% 5% 0%;
 }
+
+
+.slideImages {    
+    display: none;
+  
+}
+#slideInit {
+    display: block;
+}
+
+.slideImages img{
+    width: 100%;
+    height: 100px;
+   
+}
+
+#firstAddContainer{
+
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+
+
+
 
 footer {
     grid-area: footer;
