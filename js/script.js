@@ -44,7 +44,7 @@ var slideIndex = 0;
 slideShow();
 
 function slideShow() {  
-  setTimeout(slideShow, 4000);
+  setTimeout(slideShow, 6000);
   var i;
   var slides = document.getElementsByClassName("slideImages");
   for(i = 0; i < slides.length; i++){
