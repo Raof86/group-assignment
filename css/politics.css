@@ -21,9 +21,20 @@ hover:hover {
     color:darkred;
   }
 
+  #advertisement {
+    text-align: center;
+    font-size: 10px;
+    color:black;
+  }
+
 .box10, .box11, .box12 {
 border: 1px solid #333;
 } 
+
+.aside-section-1, .aside-section-2, .aside-section-3 {
+
+    border-bottom: 2px solid silver;
+}
 
 .box1 {
   grid-area: b1;
