@@ -10,7 +10,8 @@
 <body>
     <nav id="navbar-container">
             <div class="dropdown">
-                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="document.getElementById('dropdown-content').style.display = 'none'" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'">
+                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="document.getElementById('dropdown-content').style.display = 'block'; document.getElementById('hamburger-menu').style.display = 'none'; document.getElementById('hamburger-menu-mobile').style.display = 'block'" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'">
+                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu-mobile" onclick="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'; document.getElementById('hamburger-menu-mobile').style.display = 'none'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'; document.getElementById('hamburger-menu-mobile').style.display = 'none'">
                 <div id="dropdown-content" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'">  
                     <ul>
                         <li><a href="">Home</a></li>

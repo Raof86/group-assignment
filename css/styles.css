@@ -74,6 +74,10 @@ nav {
     color: gray;
 }
 
+#hamburger-menu-mobile {
+    display: none;
+}
+
 .dropbtn {
     position: absolute;
     height: 22px;
@@ -156,7 +160,7 @@ form input {
 
 #non-menu {
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 
 main {
