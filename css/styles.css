@@ -170,7 +170,7 @@ main a {
 #mainHead {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(20px, auto);
+    grid-auto-rows: minmax(20px, 350px);
     grid-template-areas:
         "left left left left center center center right right";
 }
@@ -182,14 +182,24 @@ main a {
 #mainHeadLeft {
     grid-area: left;
     padding: 3% 2%;
+    box-sizing: border-box;
 }
 #mainHeadCenter {
     grid-area: center;
     padding: 3% 0;
+    padding-right: 2%;
+}
+
+
+#mHC1, #mHC2, #mHC3, #mHC4, #mHC5{
+    border-bottom: 2px solid #f1f1f1;
 }
 #mainHeadRight {
     grid-area: right;
-    padding: 5% 5% 5% 0%;
+    margin-top: 2%;
+    margin-right: 4%;
+    padding: 5%;
+    border: 2px solid #f1f1f1;
 }
 .slideImages {    
     display: none;  
@@ -205,7 +215,6 @@ main a {
     margin: 5px auto;
     width: 98%;
     height: 100px;
-    background-color: lightgreen;
 }
 #mainCenter {
     display: grid;
@@ -218,6 +227,12 @@ main a {
     grid-row-gap: 10px;
     background-color: rgba(25, 181, 254, 0.1);
     background-image: linear-gradient(rgba(25, 181, 254, 0.1), #fefefe);
+    box-sizing: border-box;
+}
+
+#mainCenter img {
+    width: 100%;
+    height: 70%;
 }
 
 #mainFirstRow{
@@ -257,19 +272,25 @@ main a {
 }
 #mainBellow3{
     grid-area: right;
-    display: inline-flex;
-    align-items: stretch;    
+    display: inline-flex;  
     position: relative;
+}
+
+#mainBellow img {
+    width: 100%;
+    height: 50%;
 }
 
 #mainBellow3 img{
     width: 100%;
+    height: 100%;
 }
+
 
 #textInsideImg{
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 85%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
