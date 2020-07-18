@@ -74,6 +74,10 @@ nav {
     color: gray;
 }
 
+#hamburger-menu-mobile {
+    display: none;
+}
+
 .dropbtn {
     position: absolute;
     height: 22px;
@@ -87,7 +91,7 @@ nav {
     position: relative;
 }
   
-.dropdown-content {
+#dropdown-content {
     display: none;
     position: absolute;
     top: 44px;
@@ -98,18 +102,18 @@ nav {
     z-index: 1;
 }
 
-.dropdown-content a {
+#dropdown-content a {
     color: black;
     padding: 0px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+#dropdown-content a:hover {
     color: gray;
 }
   
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover #dropdown-content {display: block;}
 
 .dropdown ul {
     margin: 0;
@@ -156,7 +160,7 @@ form input {
 
 #non-menu {
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 
 main {
@@ -406,7 +410,7 @@ footer a {
         left: 230px;
         width: 560px;
     }
-    .dropbtn, .dropdown-content {
+    .dropbtn, #dropdown-content {
         left: 10px;
     }
     #logotext {
