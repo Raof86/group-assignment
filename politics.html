@@ -11,23 +11,35 @@
 
 </head>
 <body>
-    <nav id="navbar-container">
-        <a href="#"><img src="images/hamburger-menu.png" id="hamburger-menu"></a>
-        <h1 id="logotext">OurNews</h1>
-        <ul id="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Politics</a></li>
-            <li><a href="">Economy</a></li>
-            <li><a href="">Sports</a></li>
-            <li><a href="">Culture</a></li>
-        </ul>
-        <div id="search-container">
-            <form action="action_page.php">
-              <input type="text" placeholder="Sök" name="search">
-              <a href="#"><img src="images/search.png" id="searchimg" /></a>
-            </form>
+<nav id="navbar-container">
+    <div class="dropdown">
+        <img src="images/hamburger-menu.png" class="dropbtn">
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Politics</a></li>
+                <li><a href="">Economy</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Culture</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+<h1 id="logotext">OurNews</h1>
+<ul id="navlinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="">Politics</a></li>
+    <li><a href="">Economy</a></li>
+    <li><a href="">Sports</a></li>
+    <li><a href="">Culture</a></li>
+</ul>
+<div id="search-container">
+    <form action="action_page.php">
+      <input type="text" placeholder="Sök" name="search">
+      <a href="#"><img src="images/search.png" id="searchimg" /></a>
+    </form>
+</div>
+</nav>
+<section id="non-menu" onclick="document.getElementById('navbar-container').style.top = '-150px'">
   <main class="container">
       <section class="box1"><img src="images/box1.jpg"> 
         <div><p><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae aliquam alias voluptate id illum error autem. Error sequi deserunt minus.</hover></p></div></section>
@@ -123,10 +135,46 @@
 
 
   </main>
-        <footer>
-footer
-        </footer>
-    </section> 
+  <footer>
+    <section id="top-footer" class="footersection">
+        <img src="images/rss.png">
+        <img src="images/instagram.png">
+        <img src="images/facebook.png">
+        <img src="images/youtube.png">
+        <img src="images/twitter.png">
+    </section>
+    <section id="middle-footer" class="footersection">
+        <div id="left-bottomlinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Politics</a></li>
+            <li><a href="">Economy</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+        </div>
+        <div id="middle-bottomlinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Politics</a></li>
+            <li><a href="">Economy</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+        </div>
+        <div id="right-bottomlinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Politics</a></li>
+            <li><a href="">Economy</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+        </div>
+    </section>
+    <section id="bottom-footer" class="footersection"><small>© Copyright 2020 OurNews. All rights reserved.</small></section>
+</footer>
+</section>
 </body>
 
 </html>
