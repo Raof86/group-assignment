@@ -13,9 +13,9 @@
 <body>
 <nav id="navbar-container">
     <div class="dropdown">
-        <img src="images/hamburger-menu.png" class="dropbtn">
-        <div class="dropdown-content">
-            <ul>
+      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="document.getElementById('dropdown-content').style.display = 'none'" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'">
+      <div id="dropdown-content" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'">  
+          <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Politics</a></li>
                 <li><a href="">Economy</a></li>
