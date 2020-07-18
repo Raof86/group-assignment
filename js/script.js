@@ -43,6 +43,35 @@ function setMHInitialImage(){
   document.getElementById("mainHeadLeftPic").src="https://cdni.rt.com/files/2020.07/article/5f11598a85f5402b3e6b51cc.JPG";
 }
 
+
+//Script för autoslider(inte auto ännu) med knappar
+var bSlideIndex = 1;
+showSlides(bSlideIndex);
+
+function plusSlides(n){
+  showSlides(bSlideIndex += n);
+}
+function currentSlide(n){
+  showSlides(bSlideIndex = n);
+}
+function showSlides(n){
+  setTimeout(showSlides, 1000);
+  var i;
+  var slides = document.getElementsByClassName("bSlideImages");
+  if(n > slides.length){
+    bSlideIndex = 1;
+  }
+  if(n < 1){
+    bSlideIndex = slides.length;
+  }
+  for(i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[bSlideIndex - 1].style.display = "block";
+}
+
+
 //Script för reklamslides
 var slideIndex = 0;
 slideShow();
@@ -58,6 +87,6 @@ function slideShow() {
   if(slideIndex > slides.length){
     slideIndex = 1;
   }
-  slides[slideIndex-1].style.display = "block";   
+ slides[slideIndex-1].style.display = "block";   
 }
 
