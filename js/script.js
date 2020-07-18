@@ -16,27 +16,31 @@ window.onscroll = function() {
 
 //Funktoiner för att ändra bilder på index.html vid mouseover/mouseout
 function setMHImage1(){
-  document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder1.bmp";
+  document.getElementById("mainHeadLeftPic").src="https://cdni.rt.com/files/2020.07/article/5f11598a85f5402b3e6b51cc.JPG";
 }
 
 function setMHImage2(){
-  document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder2.bmp";
+  document.getElementById("mainHeadLeftPic").src="https://cdni.rt.com/files/2020.07/article/5f0f28a92030273358121cbf.jpeg";
 }
 
 function setMHImage3(){
-  document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder3.bmp";
+  document.getElementById("mainHeadLeftPic").src="images/maincenterImage1.jpg";
 }
 
 function setMHImage4(){
-  document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder4.bmp";
+  document.getElementById("mainHeadLeftPic").src="images/maincenterImage2.jpg";
 }
 
 function setMHImage5(){
-  document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder5.bmp";
+  document.getElementById("mainHeadLeftPic").src="images/maincenterImage3.jpg";
+}
+
+function setMHImage6(){
+  document.getElementById("mainHeadLeftPic").src="images/maincenterImage4.jpg";
 }
 
 function setMHInitialImage(){
-  document.getElementById("mainHeadLeftPic").src="images/mainheadleft-placeholder1.bmp";
+  document.getElementById("mainHeadLeftPic").src="https://cdni.rt.com/files/2020.07/article/5f11598a85f5402b3e6b51cc.JPG";
 }
 
 //Script för reklamslides
