@@ -8,6 +8,83 @@
     <link rel="stylesheet" href="css/politics.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
+
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        </style>
+
+
+
+
+
 </head>
 <body>
     <nav id="navbar-container">
@@ -29,28 +106,40 @@
     </nav>
   <main class="container">
       <section class="box1"><img src="images/box1.jpg"> 
-        <div><p>Lorem ipsumLorem ipsumLorem ipsumLorem
-             ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
+        <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae aliquam alias voluptate id illum error autem. Error sequi deserunt minus.</p></div></section>
       <section class="box2"><img src="images/box2.jpg">
-        <p>Lorem ipsumLorem ipsumLorem ipsumLorem
-            ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur, iusto quis esse deleniti expedita! Amet earum fuga sed fugiat.</p></div></section>
       <section class="box3"><img src="images/box3.jpg">
-        <div><p>Lorem ipsumLorem ipsumLorem ipsumLorem
-            ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
-      <section class="box4"><img src="images/box4.jpg">
-        <div><p>Lorem ipsumLorem ipsumLorem ipsumLorem
-            ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet magni sunt alias. Alias ab doloremque, illum porro quos eligendi!</p></div></section>
+      <section class="box4">
+
+        <div id="firstAddContainer">
+            <div class="slideImages" id="slideInit">
+                <img src="images/addImage1.bmp">
+            </div>
+            <div class="slideImages">
+                <img src="images/addImage2.bmp">
+            </div>
+            <div class="slideImages">
+                <img src="images/addImage3.bmp">
+            </div>                            
+    </div>
+        </section>
+
        <section class="box5"><img src="images/box5.jpg">
-        <div><p>Lorem ipsumLorem ipsumLorem ipsumLorem
-            ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
+        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae illum adipisci nisi quos architecto fuga non eius atque nihil.</p></div></section>
       <section class="box6"><img src="images/box6.jpg">
-        <div><p>Lorem ipsumLorem ipsumLorem ipsumLorem
-            ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
+        <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</p></div></section>
       <section class="box7"><img src="images/box7.jpg">
-        <div><p>Lorem ipsumLorem ipsumLorem ipsumLorem
-            ipsumLorem ipsumLorem ipsumLorem ipsumLorem</p></div></section>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sunt voluptatum delectus similique tenetur quis magni impedit odio maiores animi?</p></div></section>
       <section class="box8">box8</section>
-      <section class="box9">text</section>
+      <aside class="box9">
+
+<section class="aside-section-1"><div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</p></div></section>
+<section class="aside-section-2"><div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</p></div></section>
+<section class="aside-section-3"><div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</p></div></section>
+
+      </aside>
       <section class="box12">box12</section>
 
 
