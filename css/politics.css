@@ -17,6 +17,11 @@
     row-gap: 1%;
 }
 
+.image {
+    float: left;
+}
+
+
 hover:hover {
     color:darkred;
   }
@@ -96,6 +101,8 @@ border: 1px solid #333;
 .box12 {
     grid-area:b12;
     margin: 0 1% 2% 1%;
+    background-color:rgba(0,0,255,0.3);
+    
 } 
 
  footer {
