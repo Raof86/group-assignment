@@ -170,6 +170,9 @@ main {
 main a {
     text-decoration: none;
 }
+main a:hover{
+    color:darkred;
+}
 
 #mainHead {
     display: grid;
@@ -216,10 +219,18 @@ main a {
     height: 100px;   
 }
 #firstAddContainer {
-    margin: 5px auto;
+    margin: 15px auto 0px auto;
     width: 98%;
     height: 100px;
 }
+
+#advertisement {
+    text-align: center;
+    font-size: 10px;
+    color:black;
+    margin: 0 auto;
+  }
+
 #mainCenter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -259,7 +270,7 @@ main a {
 #mainBellow{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(2, 0.4fr);
+    grid-template-rows: repeat(2, 180px);
     grid-template-areas:
         "left left center center right right right right right"
         "left left center center right right right right right";
@@ -321,17 +332,22 @@ main a {
 }
 
 .prev:hover, .next:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);    
+    color: #fefefe;
 }
 
 .textInside{
     color: #fefefe;
-    font-size: 15px;
-    padding: 8px 12px;
+    font-size: 22px;
+    padding: 8px 25px;
     position: absolute;
     bottom: 8px;
-    width: 100%;
-    text-align: center;
+    width: 580px;
+    text-align: start;
+}
+
+.textInside:hover{
+    cursor: pointer;
 }
 
 .numberText{

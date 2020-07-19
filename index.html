@@ -45,18 +45,19 @@
                 <div id="mainHeadLeft">
                     <img id="mainHeadLeftPic" src="https://cdni.rt.com/files/2020.07/article/5f11598a85f5402b3e6b51cc.JPG">
                 </div>                
+                <!--onmouseout="setMHInitialImage()" -->
                
                 <div id="mainHeadCenter">
-                    <p id = mHC1><a href="#" onmouseover="setMHImage1()" onmouseout="setMHInitialImage()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?</a></p>
-                    <p id = mHC2><a href="#" onmouseover="setMHImage2()" onmouseout="setMHInitialImage()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum nulla repellat cum? Reprehenderit, maiores.</a></p>
-                    <p id = mHC3><a href="#" onmouseover="setMHImage3()" onmouseout="setMHInitialImage()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat corrupti necessitatibus.</a></p>
-                    <p id = mHC4><a href="#" onmouseover="setMHImage4()" onmouseout="setMHInitialImage()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, odit pariatur.</a></p>
-                    <p id = mHC5><a href="#" onmouseover="setMHImage5()" onmouseout="setMHInitialImage()">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facere.</a></p>
-                    <p id = mHC6><a href="#" onmouseover="setMHImage6()" onmouseout="setMHInitialImage()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sed rerum! Mollitia, adipisci vero! Reiciendis.</a></p>
+                    <a href="#" onmouseover="setMHImage1()"><p id = mHC1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?</p></a>
+                    <a href="#" onmouseover="setMHImage2()"><p id = mHC2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum nulla repellat cum? Reprehenderit, maiores.</p></a>
+                    <a href="#" onmouseover="setMHImage3()"><p id = mHC3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat corrupti necessitatibus.</p></a>
+                    <a href="#" onmouseover="setMHImage4()"><p id = mHC4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, odit pariatur.</p></a>
+                    <a href="#" onmouseover="setMHImage5()"><p id = mHC5>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facere.</p></a>
+                    <a href="#" onmouseover="setMHImage6()"><p id = mHC6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sed rerum! Mollitia, adipisci vero! Reiciendis.</p></a>
                 </div>
               
                 <div id="mainHeadRight">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XXx_Hw34V-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XXx_Hw34V-Q?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                 </div>
             </div>
 
@@ -65,12 +66,14 @@
                         <img src="images/addImage1.jpg">
                     </div>
                     <div class="slideImages">
-                        <img src="images/addImage2.bmp">
+                        <img src="images/addImage2.jpg">
                     </div>
                     <div class="slideImages">
                         <img src="images/addImage3.jpg">
                     </div>                            
             </div>
+
+            <p id=advertisement>Advertisement</p>
 
             <div id="mainCenter">
                 <div id="mainFirstRow">
@@ -90,7 +93,7 @@
             <div id="mainBellow">
                 <div id="mainBellow1">
                     <img src="images/mainbellow1.JPG">
-                    <a href="#"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae corporis aliquid laudantium atque unde esse tempora vitae.</p></a>
+                    <a href="#"><p>Lorem ipsum dolor sit. Recusandae corporis aliquid laudantium atque unde esse tempora vitae.</p></a>
                     <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsa!</p></a>
                 </div>
                 <div id="mainBellow2">
@@ -101,31 +104,27 @@
                 <div id="mainBellow3">
                     <div class="bSlideImages" id= "bSlideInit">
                         <div class="numberText">1 / 3</div>
-                        <img src="images/maincenterimage3.bmp">
-                        <div class="textInside">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, optio?</div>
+                        <img src="images/bslideImage1.jpg">
+                        <div class="textInside">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatem.</div>
                     </div>
                     <div class="bSlideImages">
                         <div class="numberText">2 / 3</div>
-                        <img src="images/maincenterimage1.bmp">
-                        <div class="textInside">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo.</div>
+                        <img src="images/bslideImage2.jpg">
+                        <div class="textInside">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo. Lorem ipsum dolor sit. Vel nulla ipsum, provident iusto libero. Asperiores?</div>
                     </div>
                     <div class="bSlideImages">
                         <div class="numberText">3 / 3</div>
-                        <img src="images/maincenterimage2.bmp">
-                        <div class="textInside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, similique quam?</div>
+                        <img src="images/bslideImage3.jpg">
+                        <div class="textInside">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, similique quam?</div>
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <!--<img src="images/maincenterimage3.bmp">
-                    <div id="textInsideImg">
-                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem dolor, autem quaerat dolorem excepturi.</p></a>
-                    </div>-->
                 </div>
             </div>
 
         </main>
     </div>
+
     <footer>
         <section id="top-footer" class="footersection">
             <img src="images/rss.png">

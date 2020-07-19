@@ -44,18 +44,25 @@ function setMHInitialImage(){
 }
 
 
-//Script för autoslider(inte auto ännu) med knappar
+//Script för autoslider med knappar
+
+startAutoSlide();
+var myVar;
+
+function startAutoSlide(){
+  myVar = setInterval(function(){ plusSlides(1); }, 5000);
+}
+
 var bSlideIndex = 1;
-showSlides(bSlideIndex);
+bShowSlides(bSlideIndex);
 
 function plusSlides(n){
-  showSlides(bSlideIndex += n);
+  bShowSlides(bSlideIndex += n);
 }
 function currentSlide(n){
-  showSlides(bSlideIndex = n);
+  bShowSlides(bSlideIndex = n);
 }
-function showSlides(n){
-  setTimeout(showSlides, 1000);
+function bShowSlides(n){
   var i;
   var slides = document.getElementsByClassName("bSlideImages");
   if(n > slides.length){
