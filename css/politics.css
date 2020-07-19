@@ -21,6 +21,9 @@
     float: left;
 }
 
+#myslidesInit {
+    display:block;
+}
 
 hover:hover {
     color:darkred;
@@ -80,9 +83,13 @@ border: 1px solid #333;
 
 .box8 {
     grid-area:b8;
-    margin: 0 5% 5% 5%;
+    margin: 2% 5% 2% 5%;
 }
 
+.box8 img {
+    height: 100%;
+    width: 100%;
+}
 .box9 {
     grid-area:b9;
     margin: 0 10% 0 10%;

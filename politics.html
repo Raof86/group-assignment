@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/politics.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+  
+  
 </head>
 <body>
+    
 <nav id="navbar-container">
     <div class="dropdown">
       <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="document.getElementById('dropdown-content').style.display = 'block'; document.getElementById('hamburger-menu').style.display = 'none'; document.getElementById('hamburger-menu-mobile').style.display = 'block'" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'">
@@ -73,56 +75,30 @@
 
         <div class="slideshow-container">
 
-            <div class="mySlides fade">
+            <div class="mySlides" id="myslidesInit">
               <div class="numbertext">1 / 3</div>
               <img src="images/img1.jpg" style="width:100%">
-              <div class="text">Lorem ipsum</div>
+              <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, rerum?</div>
             </div>
             
-            <div class="mySlides fade">
+            <div class="mySlides">
               <div class="numbertext">2 / 3</div>
               <img src="images/img2.jpg" style="width:100%">
               <div class="text">Lorem ipsum</div>
             </div>
             
-            <div class="mySlides fade">
+            <div class="mySlides">
               <div class="numbertext">3 / 3</div>
               <img src="images/img3.jpg" style="width:100%">
               <div class="text">Lorem ipsum</div>
             </div>
-            
+            <a class="prev" onclick="plusSlidesx(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesx(1)">&#10095;</a>
             </div>
-            <br>
+          
             
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
+       
             
-            <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 5000); // Change image every 5 seconds
-            }
-            </script>
-
-
       </section>
       <aside class="box9">
 
@@ -182,5 +158,5 @@
 </footer>
 </section>
 </body>
-
+<script src="js/politics.js"></script>
 </html>
