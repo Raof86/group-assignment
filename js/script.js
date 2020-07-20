@@ -97,3 +97,28 @@ function slideShow() {
  slides[slideIndex-1].style.display = "block";   
 }
 
+function displayDropdown() {
+  document.getElementById('dropdown-content').style.display = 'block';
+}
+
+function hideDropdown() {
+  document.getElementById('dropdown-content').style.display = 'none';
+}
+
+function displayHamburgerMenu() {
+  document.getElementById('hamburger-menu').style.display = 'block';
+}
+
+function hideHamburgerMenu() {
+  document.getElementById('hamburger-menu').style.display = 'none';
+}
+
+function displayHamburgerMobile() {
+  document.getElementById('hamburger-menu-mobile').style.display = 'block';
+}
+
+function hideHamburgerMobile() {
+  document.getElementById('hamburger-menu-mobile').style.display = 'none';
+}
+
+

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OurNews</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav id="navbar-container">
             <div class="dropdown">
-                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="document.getElementById('dropdown-content').style.display = 'block'; document.getElementById('hamburger-menu').style.display = 'none'; document.getElementById('hamburger-menu-mobile').style.display = 'block'" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'">
-                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu-mobile" onclick="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'; document.getElementById('hamburger-menu-mobile').style.display = 'none'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'; document.getElementById('hamburger-menu-mobile').style.display = 'none'">
-                <div id="dropdown-content" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'">  
+                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="displayDropdown(); hideHamburgerMenu(); displayHamburgerMobile()" onmouseover="displayDropdown()" onmouseout="hideDropdown(); displayHamburgerMenu()">
+                <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu-mobile" onclick="hideDropdown(); displayHamburgerMenu(); hideHamburgerMobile()" onmouseout="hideDropdown(); displayHamburgerMenu(); hideHamburgerMobile()">
+                <div id="dropdown-content" onmouseover="displayDropdown()" onmouseout="hideDropdown()">  
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="politics.html">Politics</a></li>
@@ -22,7 +22,7 @@
                     </ul>
                 </div>
             </div>
-        <h1 id="logotext">OurNews</h1>
+            <a href=""><h1 id="logotext">OurNews</h1></a>
         <ul id="navlinks">
             <li><a href="">Home</a></li>
             <li><a href="politics.html">Politics</a></li>
@@ -47,13 +47,13 @@
                 </div>                
                 <!--onmouseout="setMHInitialImage()" -->
                
-                <div id="mainHeadCenter">
-                    <a href="#" onmouseover="setMHImage1()"><p id = mHC1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?</p></a>
-                    <a href="#" onmouseover="setMHImage2()"><p id = mHC2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum nulla repellat cum? Reprehenderit, maiores.</p></a>
-                    <a href="#" onmouseover="setMHImage3()"><p id = mHC3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat corrupti necessitatibus.</p></a>
-                    <a href="#" onmouseover="setMHImage4()"><p id = mHC4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, odit pariatur.</p></a>
-                    <a href="#" onmouseover="setMHImage5()"><p id = mHC5>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facere.</p></a>
-                    <a href="#" onmouseover="setMHImage6()"><p id = mHC6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sed rerum! Mollitia, adipisci vero! Reiciendis.</p></a>
+                <div id="mainHeadCenter"><h4>
+                    <a href="#" onmouseover="setMHImage1()"><p id="mHC1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?</p></a>
+                    <a href="#" onmouseover="setMHImage2()"><p id="mHC2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum nulla repellat cum?</p></a>
+                    <a href="#" onmouseover="setMHImage3()"><p id="mHC3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat corrupti necessitatibus.</p></a>
+                    <a href="#" onmouseover="setMHImage4()"><p id="mHC4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, odit pariatur.</p></a>
+                    <a href="#" onmouseover="setMHImage5()"><p id="mHC5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facere.</p></a>
+                    <a href="#" onmouseover="setMHImage6()"><p id="mHC6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sed rerum! Mollitia</p></a></h4>
                 </div>
               
                 <div id="mainHeadRight">
@@ -78,28 +78,28 @@
             <div id="mainCenter">
                 <div id="mainFirstRow">
                     <img src="https://ichef.bbci.co.uk/images/ic/720x405/p08c4dld.jpg">
-                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum itaque a quo fuga ratione maxime ea iusto culpa! Harum perferendis vitae aut placeat voluptates consequatur rem sunt alias atque!</p></a>
+                    <h4><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum itaque a quo fuga</p></a></h4>
                 </div>
                 <div id="mainSecondRow">
                     <img src="https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_88/w_3200/w_1982,h_1115,c_crop,x_410,y_90/w_500/v1579504325/39-6327845e254fa18a82c.jpg">
-                    <a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam temporibus aut dolorum omnis magnam sit.</p></a>
+                    <h4><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam temporibus aut dolorum</p></a></h4>
                 </div>
                 <div id="mainThirdRow">
                     <img src="images/mainmiddleImage1.jpg">
-                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint consectetur laudantium, quos ullam sequi explicabo eius ut. Doloribus voluptatem esse ducimus error praesentium explicabo!</p></a>
+                    <h4><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint consectetur</p></a></h4>
                 </div>
             </div>
 
             <div id="mainBellow">
                 <div id="mainBellow1">
                     <img src="images/mainbellow1.JPG">
-                    <a href="#"><p>Lorem ipsum dolor sit. Recusandae corporis aliquid laudantium atque unde esse tempora vitae.</p></a>
-                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsa!</p></a>
+                    <h4><a href="#"><p>Lorem ipsum dolor sit. Recusandae corporis aliquid laudantium atque</p></a>
+                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></h4>
                 </div>
                 <div id="mainBellow2">
                     <img src="images/mainbellow2.JPG">
-                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure modi quam quod eius dicta, esse est nihil?</p></a>
-                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, enim sed? Voluptates.</p></a>
+                    <h4><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a>
+                    <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a></h4>
                 </div>
                 <div id="mainBellow3">
                     <div class="bSlideImages" id= "bSlideInit">

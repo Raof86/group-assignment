@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Politics</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/politics.css">
     <link rel="stylesheet" href="css/styles.css">
-  
-  
 </head>
 <body>
     
 <nav id="navbar-container">
     <div class="dropdown">
       
-      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="document.getElementById('dropdown-content').style.display = 'block'; document.getElementById('hamburger-menu').style.display = 'none'; document.getElementById('hamburger-menu-mobile').style.display = 'block'" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'">
-      
-      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu-mobile" onclick="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'; document.getElementById('hamburger-menu-mobile').style.display = 'none'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'; document.getElementById('hamburger-menu').style.display = 'block'; document.getElementById('hamburger-menu-mobile').style.display = 'none'">
-      
-      <div id="dropdown-content" onmouseover="document.getElementById('dropdown-content').style.display = 'block'" onmouseout="document.getElementById('dropdown-content').style.display = 'none'">  
+      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="displayDropdown(); hideHamburgerMenu(); displayHamburgerMobile()" onmouseover="displayDropdown()" onmouseout="hideDropdown(); displayHamburgerMenu()">
+      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu-mobile" onclick="hideDropdown(); displayHamburgerMenu(); hideHamburgerMobile()" onmouseout="hideDropdown(); displayHamburgerMenu(); hideHamburgerMobile()">
+            <div id="dropdown-content" onmouseover="displayDropdown()" onmouseout="hideDropdown()">  
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Politics</a></li>

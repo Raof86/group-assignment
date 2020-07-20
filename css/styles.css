@@ -13,8 +13,9 @@ a:hover {
     color: gray;
 }
 
-body{    
+body {    
     background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #body-container {
@@ -171,7 +172,7 @@ main a {
     text-decoration: none;
 }
 main a:hover{
-    color:darkred;
+    color:red;
 }
 
 #mainHead {
