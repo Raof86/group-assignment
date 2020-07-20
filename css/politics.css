@@ -1,3 +1,7 @@
+/* * {box-sizing: border-box;} */
+body {font-family: Arial, Helvetica, sans-serif;}
+/* img {vertical-align: middle;} */
+
 .container {
     width: 1200px;
     margin: auto;
@@ -118,10 +122,7 @@ border: 1px solid #333;
     padding: auto;
 }   */
 
-* {box-sizing: border-box;}
-body {font-family: Arial, Helvetica, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
