@@ -1,3 +1,7 @@
+/* * {box-sizing: border-box;} */
+body {font-family: Arial, Helvetica, sans-serif;}
+/* img {vertical-align: middle;} */
+
 .container {
     width: 1200px;
     margin: auto;
@@ -29,18 +33,17 @@ hover:hover {
     color:darkred;
   }
 
-  #advertisement {
-    text-align: center;
-    font-size: 10px;
-    color:black;
-  }
+#advertisement {
+  text-align: center;
+  font-size: 10px;
+  color:black;
+}
 
 .box10, .box11, .box12 {
 border: 1px solid #333;
 } 
 
 .aside-section-1, .aside-section-2, .aside-section-3 {
-
     border-bottom: 2px solid silver;
 }
 
@@ -112,17 +115,14 @@ border: 1px solid #333;
     
 } 
 
- footer {
+ /* footer {
     grid-area: footer;
     width: 1200px;
     margin: auto;
     padding: auto;
-}  
+}   */
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
