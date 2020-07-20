@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-    color: gray;
+    color: red;
 }
 
 body {    
@@ -72,7 +72,7 @@ nav {
 }
 
 #navlinks li a:hover {
-    color: gray;
+    color: red;
 }
 
 #hamburger-menu-mobile {
@@ -111,7 +111,7 @@ nav {
 }
 
 #dropdown-content a:hover {
-    color: gray;
+    color: red;
 }
   
 .dropdown:hover #dropdown-content {display: block;}
