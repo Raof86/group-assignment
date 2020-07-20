@@ -31,3 +31,23 @@ function myShowSlides(n){
 
   slides[mySlideIndex - 1].style.display = "block";
 }
+
+
+
+//Script för reklamslides
+var slideIndex = 0;
+slideShow();
+
+function slideShow() {  
+  setTimeout(slideShow, 6000);
+  var i;
+  var slides = document.getElementsByClassName("slideImages");
+  for(i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if(slideIndex > slides.length){
+    slideIndex = 1;
+  }
+ slides[slideIndex-1].style.display = "block";   
+}

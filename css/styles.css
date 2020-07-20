@@ -189,13 +189,12 @@ main a:hover{
 }
 #mainHeadLeft {
     grid-area: left;
-    padding: 3% 2%;
+    padding: 3% 2% 0 2%;
     box-sizing: border-box;
 }
 #mainHeadCenter {
     grid-area: center;
-    padding: 3% 0;
-    padding-right: 2%;
+    padding: 0 2% 0 0;
 }
 
 
@@ -220,7 +219,7 @@ main a:hover{
     height: 100px;   
 }
 #firstAddContainer {
-    margin: 15px auto 0px auto;
+    margin: 30px auto 0px auto;
     width: 98%;
     height: 100px;
 }
@@ -235,6 +234,7 @@ main a:hover{
 #mainCenter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 330px;
     grid-template-areas:
         "first second third";
     margin: 15px 0px;
@@ -357,16 +357,8 @@ main a:hover{
     padding: 8px 12px;
     position: absolute;
     top: 0;
-
 }
 
-/*
-#textInsideImg{
-    position: absolute;
-    top: 85%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-}*/
 
 footer {
     width: 100%;
@@ -438,6 +430,37 @@ footer a {
     }
 }
 
+
+@media screen and (max-width: 1200px) {
+    #mainHeadRight{
+        display: none;
+    }
+    #firstAddContainer {
+        width: 900px;
+    }
+
+    #mainHead {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: minmax(20px, 350px);
+        grid-template-areas:
+            "left left left left center center center center center";
+    }
+
+    #mainCenter{
+        grid-template-rows: 300px;
+    }
+
+    #body-container {
+        width: 900px; 
+    }
+
+    .textInside{
+        width: 430px;
+    }
+}
+
+
 @media screen and (max-width: 1131px) {
     #navlinks li {
         line-height: 30px;
@@ -448,6 +471,20 @@ footer a {
     }
 }
 
+@media screen and (max-width: 900px) {
+    #body-container {
+        width: 100%; 
+    }
+    #firstAddContainer {
+        width: 100%;
+    }
+
+    .textInside{
+        width: 350px;
+    }    
+  
+}
+
 @media screen and (max-width: 785px) {
     #navlinks {
         display: none;
@@ -455,6 +492,84 @@ footer a {
     #search-container {
         top: 16px;
     }
+
+    #mainHeadLeft{
+        display: none;
+    }
+
+    #mainHead {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(20px, 370px);
+        grid-template-areas:
+            "center";
+    }
+
+    #mainHeadCenter{
+        font-size: 19px;
+    }
+
+    #mainCenter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px;
+        grid-template-areas:
+            "first second"
+            "third third";
+    }
+
+    
+    #mainBellow{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "left left left center center center"
+            "right right right right right right";
+        grid-template-rows: 300px 300px;
+        margin: 15px 0px;
+        margin-bottom: 50px;
+        padding: 1% 1%;
+        grid-column-gap: 5%;
+        grid-row-gap: 10px;
+    }
+
+    .textInside{
+        font-size: 20px;
+        width: 90%;
+    }
+
+    #mainThirdRow img{
+        height: 300px;
+    }
+    
+    
+
+
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    #mainHeadLeft{
+        display: block;
+    }
+
+    #mainHead {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 300px;
+        grid-template-areas:
+            "left"
+            "center";
+    }
+
+    #mainHeadCenter{
+        font-size: 19px;
+    }
+
+    #mainCenter {
+        grid-template-rows: 300px;
+        grid-row-gap: 50px;
+    
+
 }
 
 @media screen and (max-width: 468px) {
