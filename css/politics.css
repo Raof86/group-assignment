@@ -39,9 +39,6 @@ hover:hover {
   color:black;
 }
 
-.box10, .box11, .box12 {
-border: 1px solid #333;
-} 
 
 .aside-section-1, .aside-section-2, .aside-section-3 {
     border-bottom: 2px solid silver;
@@ -115,12 +112,7 @@ border: 1px solid #333;
     
 } 
 
- /* footer {
-    grid-area: footer;
-    width: 1200px;
-    margin: auto;
-    padding: auto;
-}   */
+
 
 .mySlides {display: none;}
 
