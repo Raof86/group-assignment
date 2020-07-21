@@ -6,7 +6,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     width: 1200px;
     margin: auto;
     padding: auto;
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, minmax(50px, auto));
@@ -44,16 +44,13 @@ hover:hover {
   color:black;
 }
 
-
-
-
 .aside-section-1, .aside-section-2, .aside-section-3 {
     border-bottom: 2px solid silver;
 }
 
 .box1 {
   grid-area: b1;
-  margin: 5% 5% 5% 5%;
+  margin: 3% 5% 5% 5%;
 }
 
 .box2 {
@@ -63,12 +60,12 @@ hover:hover {
 
 .box2x {
     grid-area:b2x;
-    margin: -40% 5% 5% 5%;
+    margin: -42% 5% 5% 5%;
 }
 
 .box3x {
     grid-area:b3x;
-    margin: -30% 5% 5% 5%;
+    margin: -32% 5% 5% 5%;
 }
 
 .box3 {
@@ -89,7 +86,7 @@ hover:hover {
     
  }
 
- section.box5, section.box2, section.box3, section.box2x, section.box3x  {
+  section.box5, section.box2, section.box3, section.box2x, section.box3x  {
     /* To correctly align image, regardless of content height: */
     vertical-align: top;
     display: inline-block;
@@ -99,9 +96,20 @@ hover:hover {
      width: 220px; 
 }
 
- .text-section {
-     display: block;
- }
+.text-section .text-section-box1 {
+    display: block;
+}
+
+section.box1 {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: left;
+    /* The width of the container also implies margin around the images. */
+     width: 400px; 
+}
+
 
 .box6 {
     grid-area:b6;
