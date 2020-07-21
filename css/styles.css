@@ -626,8 +626,8 @@ footer a {
     }
 
     .mainCenter {
-        grid-row-gap: 85px;
-        grid-template-rows: 200px 300px;
+        grid-row-gap: 130px;
+        grid-template-rows: 175px 300px;
         grid-template-areas:
             "first second"
             "third third";
