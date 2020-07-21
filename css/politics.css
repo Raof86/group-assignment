@@ -89,7 +89,7 @@ hover:hover {
     
  }
 
- section.box5, section.box2, section.box3  {
+ section.box5, section.box2, section.box3, section.box2x, section.box3x  {
     /* To correctly align image, regardless of content height: */
     vertical-align: top;
     display: inline-block;
