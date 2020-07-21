@@ -9,9 +9,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
     background-color: #fefefe;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, minmax(50px, auto));
+    grid-template-rows: repeat(6, minmax(50px, auto));
     grid-template-areas: 
-        "b1 b1 b1 b1 b2 b2 b2 b2 b3 b3 b3 b3"
+        "b1 b1 b1 b1 b1 b2 b2 b2 b3 b3 b3 b3"
+        "b1 b1 b1 b1 b1 b2x b2x b2x b3x b3x b3x b3x"
         "b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4"
         "b5 b5 b5 b5 b6 b6 b6 b6 b7 b7 b7 b7"
         "b8 b8 b8 b8 b8 b8 b8 b9 b9 b9 b9 b9"
@@ -24,6 +25,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .image {
     float: left;
 }
+
+img {
+    margin-bottom: -15px;
+  }
 
 #myslidesInit {
     display:block;
@@ -40,6 +45,8 @@ hover:hover {
 }
 
 
+
+
 .aside-section-1, .aside-section-2, .aside-section-3 {
     border-bottom: 2px solid silver;
 }
@@ -52,6 +59,16 @@ hover:hover {
 .box2 {
     grid-area:b2;
     margin: 5% 5% 5% 5%;
+}
+
+.box2x {
+    grid-area:b2x;
+    margin: -40% 5% 5% 5%;
+}
+
+.box3x {
+    grid-area:b3x;
+    margin: -30% 5% 5% 5%;
 }
 
 .box3 {
@@ -69,6 +86,21 @@ hover:hover {
  .box5 {
     grid-area:b5;
     margin: 5% 5% 5% 5%;
+    
+ }
+
+ section.box5, section.box2, section.box3  {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: left;
+    /* The width of the container also implies margin around the images. */
+     width: 220px; 
+}
+
+ .text-section {
+     display: block;
  }
 
 .box6 {
