@@ -557,12 +557,12 @@ footer a {
         grid-template-areas:
             "left left left center center center"
             "right right right right right right";
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 350px 300px;
         margin: 15px 0px;
         margin-bottom: 50px;
         padding: 1% 1%;
         grid-column-gap: 5%;
-        grid-row-gap: 10px;
+        grid-row-gap: 5px;
     }
 
     .textInside{
@@ -626,7 +626,12 @@ footer a {
     }
 
     .mainCenter {
-        grid-row-gap: 65px;
+        grid-row-gap: 85px;
+        grid-template-rows: 200px 300px;
+        grid-template-areas:
+            "first second"
+            "third third";
+        margin-bottom: 110px;
     }
 
     #mainBellow{
@@ -641,6 +646,7 @@ footer a {
     #mainLast{
         grid-template-rows: 300px 300px;
         grid-row-gap: 95px;
+        margin-bottom: 150px;
 
     }
 }
