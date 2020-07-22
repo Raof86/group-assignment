@@ -98,7 +98,7 @@ hover:hover {
  #box5-1-text {
      font-size:15px;
      color: #003366;
-     border-bottom:black;
+     width: 90%;
  }
 
  #heading-box5-1 {
@@ -120,7 +120,7 @@ hover:hover {
  #box6-1-text {
      font-size:15px;
      color: #003366;;
-     border-bottom:black;
+     width: 90%;
  }
 
  #heading-box6-1 {
@@ -137,39 +137,45 @@ hover:hover {
     grid-area:b7-1;
     margin-left: -150px;
     height: 10px; 
+    
  }
 
  #box7-1-text {
      font-size:15px;
-     color: #003366;;
-     border-bottom:black;
+     color: #003366;
+     width: 90%;
  }
 
  #heading-box7-1 {
      font-size: 15px;
      color: #4b78a7;
+   
  }
 
  #heading-box7-1-1 {
     font-size: 14px;
     color: #666666;
+ 
 }
 
 .box8-1 {
     grid-area:b8-1;
     margin-left: -150px;
     height: 10px; 
+  
  }
 
  #box8-1-text {
      font-size:15px;
      color: #003366;;
-     border-bottom:black;
+     width: 90%;
+     
  }
 
  #heading-box8-1 {
      font-size: 15px;
      color: #4b78a7;
+     
  }
 
  #heading-box8-1-1 {
@@ -178,20 +184,23 @@ hover:hover {
 }
 
 .box9-1 {
-    grid-area:b8-1;
+    grid-area:b9-1;
     margin-left: -150px;
     height: 10px; 
+    
  }
 
  #box9-1-text {
      font-size:15px;
-     color: #003366;;
-     border-bottom:black;
+     color: #003366;
+     width: 90%;
+       
  }
 
  #heading-box9-1 {
      font-size: 15px;
      color: #4b78a7;
+     
  }
 
  #heading-box9-1-1 {
@@ -237,6 +246,7 @@ section.box1 {
 .box8 {
     grid-area:b8;
     margin: 2% 5% 2% 5%;
+    
 }
 
 .box9 {
