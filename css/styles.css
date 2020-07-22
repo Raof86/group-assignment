@@ -493,8 +493,11 @@ footer a {
 
 
 @media screen and (max-width: 1131px) {
-    #navlinks li {
-        line-height: 30px;
+    #navlinks{
+        left: 195px;
+        width: 500px;
+        bottom: 20px;
+        right: 150px;
     }
     #search-container {
         top: 30px;
@@ -502,7 +505,10 @@ footer a {
     }
 }
 
+
+
 @media screen and (max-width: 900px) {
+   
     #body-container {
         width: 100%; 
     }
@@ -513,10 +519,11 @@ footer a {
     .textInside{
         width: 350px;
     }    
-  
+    
 }
 
 @media screen and (max-width: 785px) {
+    
     #navlinks {
         display: none;
     }
