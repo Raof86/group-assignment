@@ -3,7 +3,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* img {vertical-align: middle;} Kommenterade eftersom detta var i konflikt med menyn */
 
 .container {
-    width: 1200px;
+    width:1200px;
     margin: auto;
     background-color: white;
     padding: auto;
@@ -18,14 +18,67 @@ body {font-family: Arial, Helvetica, sans-serif;}
         "b6 b6 b6 b6 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1"
         "b7 b7 b7 b7 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1"
         "b8 b8 b8 b8 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1"
-        "b9 b9 b9 b9 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1";  
+        "b9 b9 b9 b9 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1"
+        "b10 b10 b10 b10 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1"
+        "b11 b11 b11 b11 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1"
+        "b12 b12 b12 b12 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1"
+        "b b b b b b b b b b b b";  
         
     column-gap: 1%;
     row-gap: 1%;
 }
 
+@media screen (max-width: 1200px) {
+.container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, minmax(50px, auto));
+    grid-template-areas: 
+        "b1 b1 b1 b1 b1 b2 b2 b2 b3 b3 b3 b3"
+        "b1 b1 b1 b1 b1 b2x b2x b2x b3x b3x b3x b3x"
+        "b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4"
+        "b5 b5 b5 b5 b5-1 b5-1 b5-1 b5-1 b5-1 b5-1 b5-1 b5-1"
+        "b6 b6 b6 b6 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1"
+        "b7 b7 b7 b7 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1"
+        "b8 b8 b8 b8 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1"
+        "b9 b9 b9 b9 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1"
+        "b10 b10 b10 b10 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1"
+        "b11 b11 b11 b11 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1"
+        "b12 b12 b12 b12 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1"
+        "b b b b b b b b b b b b"; 
+
+    }
+}
+
+@media screen (max-width: 480px) {
+    .container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, minmax(50px, auto));
+    grid-template-areas: 
+    "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1"
+    "b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2"
+    "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3"
+    "b2x b2x b2x b2x b2x b2x b2x b2x b2x b2x b2x b2x"
+    "b3x b3x b3x b3x b3x b3x b3x b3x b3x b3x b3x b3x"
+    "b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4"
+    "b5 b5 b5 b5 b5-1 b5-1 b5-1 b5-1 b5-1 b5-1 b5-1 b5-1"
+    "b6 b6 b6 b6 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1 b6-1"
+    "b7 b7 b7 b7 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1 b7-1"
+    "b8 b8 b8 b8 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1 b8-1"
+    "b9 b9 b9 b9 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1 b9-1"
+    "b10 b10 b10 b10 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1"
+    "b11 b11 b11 b11 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1"
+    "b12 b12 b12 b12 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1"
+    "b b b b b b b b b b b b"; 
+
+    }
+}
+
 .image {
     float: left;
+}
+
+img {
+    cursor: pointer;
 }
 
 /* Kommenterade eftersom detta var i konflikt med menyn
@@ -99,16 +152,19 @@ hover:hover {
      font-size:15px;
      color: #003366;
      width: 90%;
+     cursor: pointer;
  }
 
  #heading-box5-1 {
     font-size: 15px;
     color: #4b78a7;
+    cursor: pointer;
 }
 
 #heading-box5-1-1 {
     font-size: 14px;
     color: #666666;
+    
 }
 
  .box6-1 {
@@ -121,11 +177,13 @@ hover:hover {
      font-size:15px;
      color: #003366;;
      width: 90%;
+     cursor: pointer;
  }
 
  #heading-box6-1 {
      font-size: 15px;
      color: #4b78a7;
+     cursor: pointer;
  }
 
  #heading-box6-1-1 {
@@ -144,11 +202,13 @@ hover:hover {
      font-size:15px;
      color: #003366;
      width: 90%;
+     cursor: pointer;
  }
 
  #heading-box7-1 {
      font-size: 15px;
      color: #4b78a7;
+     cursor: pointer;
    
  }
 
@@ -167,14 +227,15 @@ hover:hover {
 
  #box8-1-text {
      font-size:15px;
-     color: #003366;;
+     color: #003366;
      width: 90%;
-     
+     cursor: pointer;
  }
 
  #heading-box8-1 {
      font-size: 15px;
      color: #4b78a7;
+     cursor: pointer;
      
  }
 
@@ -194,16 +255,94 @@ hover:hover {
      font-size:15px;
      color: #003366;
      width: 90%;
+     cursor: pointer;
        
  }
 
  #heading-box9-1 {
      font-size: 15px;
      color: #4b78a7;
+     cursor: pointer;
      
  }
 
  #heading-box9-1-1 {
+    font-size: 14px;
+    color: #666666;
+}
+
+.box10-1 {
+    grid-area:b10-1;
+    margin-left: -150px;
+    height: 10px; 
+    
+ }
+
+ #box10-1-text {
+     font-size:15px;
+     color: #003366;
+     width: 90%;
+     cursor: pointer;
+       
+ }
+
+ #heading-box10-1 {
+     font-size: 15px;
+     color: #4b78a7;
+     cursor: pointer;
+     
+ }
+
+ #heading-box10-1-1 {
+    font-size: 14px;
+    color: #666666;
+}
+
+.box11-1 {
+    grid-area:b11-1;
+    margin-left: -150px;
+    height: 10px; 
+    
+ }
+
+ #box11-1-text {
+     font-size:15px;
+     color: #003366;
+     width: 90%;
+     cursor: pointer;    
+ }
+
+ #heading-box11-1 {
+     font-size: 15px;
+     color: #4b78a7;
+     cursor: pointer; 
+ }
+
+ #heading-box11-1-1 {
+    font-size: 14px;
+    color: #666666;
+}
+
+.box12-1 {
+    grid-area:b12-1;
+    margin-left: -150px;
+    height: 10px;  
+ }
+
+ #box12-1-text {
+     font-size:15px;
+     color: #003366;
+     width: 90%;
+     cursor: pointer;   
+ }
+
+ #heading-box12-1 {
+     font-size: 15px;
+     color: #4b78a7;
+     cursor: pointer; 
+ }
+
+ #heading-box12-1-1 {
     font-size: 14px;
     color: #666666;
 }
@@ -256,19 +395,17 @@ section.box1 {
 
 .box10 {
     grid-area:b10;
-    margin: 0 10% 0 10%;
+    margin: 5% 5% 5% 5%;
 }
 
 .box11 {
     grid-area:b11;
-    margin: 0 10% 5% 10%;
+    margin: 5% 5% 5% 5%;
 }
 
 .box12 {
     grid-area:b12;
-    margin: 0 1% 2% 1%;
-    background-color:rgba(0,0,255,0.3);
-    
+    margin: 5% 5% 5% 5%;
 } 
 
 .mySlides {display: none;}
@@ -337,3 +474,22 @@ section.box1 {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+
+#myBtn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgba(0,51,102,.99);
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .button {
+    grid-area:b;
+    width: 90%;
+    padding-left: 21px;
+  }
