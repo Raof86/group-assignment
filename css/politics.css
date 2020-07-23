@@ -22,13 +22,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
         "b10 b10 b10 b10 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1 b10-1"
         "b11 b11 b11 b11 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1 b11-1"
         "b12 b12 b12 b12 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1 b12-1"
-        "b b b b b b b b b b b b";  
+        "b b b b b b b b b b b b";
         
     column-gap: 1%;
     row-gap: 1%;
 }
 
-@media screen (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 .container {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(20, minmax(50px, auto));
@@ -49,8 +49,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
     }
 }
 
-@media screen (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .container {
+    width:100%;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(20, minmax(50px, auto));
     grid-template-areas: 
@@ -71,6 +72,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
     "b b b b b b b b b b b b"; 
 
     }
+    .box7 {
+        grid-row-gap: 500px;
+    }
+}
+
+.show-more {
+    display:none;
 }
 
 .image {
@@ -81,10 +89,10 @@ img {
     cursor: pointer;
 }
 
-/* Kommenterade eftersom detta var i konflikt med menyn
-/* img {
+ /* Kommenterade eftersom detta var i konflikt med menyn */
+.container img {
     margin-bottom: -15px;
-  } */
+  }
 
 #myslidesInit {
     display:block;
