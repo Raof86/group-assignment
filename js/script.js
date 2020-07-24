@@ -97,30 +97,46 @@ function slideShow() {
  slides[slideIndex-1].style.display = "block";   
 }
 
-
-
 function displayDropdown() {
-  document.getElementById('dropdown-content').style.display = 'block';
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 641) {
+    document.getElementById('dropdown-content').style.display = 'block';
+  }
 }
 
 function hideDropdown() {
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 641) {
   document.getElementById('dropdown-content').style.display = 'none';
+  }
 }
 
 function displayHamburgerMenu() {
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 641) {
   document.getElementById('hamburger-menu').style.display = 'block';
+  }
 }
 
 function hideHamburgerMenu() {
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 641) {
   document.getElementById('hamburger-menu').style.display = 'none';
+  }
 }
 
 function displayHamburgerMobile() {
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 641) {
   document.getElementById('hamburger-menu-mobile').style.display = 'block';
+  }
 }
 
 function hideHamburgerMobile() {
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 641) {
   document.getElementById('hamburger-menu-mobile').style.display = 'none';
+  }
 }
 
 // Get the container element
