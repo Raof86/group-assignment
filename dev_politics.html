@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dev_politics.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+<nav id="navbar-container">
+    <div class="dropdown">
+      
+      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu" onclick="displayDropdown(); hideHamburgerMenu(); displayHamburgerMobile()" onmouseover="displayDropdown()" onmouseout="hideDropdown(); displayHamburgerMenu()">
+      <img src="images/hamburger-menu.png" class="dropbtn" id="hamburger-menu-mobile" onclick="hideDropdown(); displayHamburgerMenu(); hideHamburgerMobile()" onmouseout="hideDropdown(); displayHamburgerMenu(); hideHamburgerMobile()">
+            <div id="dropdown-content" onmouseover="displayDropdown()" onmouseout="hideDropdown()">  
+            <ul>
+              <li><a href="index.html"><button class="btn">Home</button></a></li>
+              <li><a href="politics.html"><button class="btn active">Politics</button></a></li>
+              <li><a href=""><button class="btn">Economy</button></a></li>
+              <li><a href=""><button class="btn">Sports</button></a></li>
+              <li><a href=""><button class="btn">Culture</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <a href=""><h1 id="logotext">OurNews</h1></a>
+  <ul id="navlinks">
+    <li><a href="index.html"><button class="btn">Home</button></a></li>
+            <li><a href="politics.html"><button class="btn active">Politics</button></a></li>
+            <li><a href=""><button class="btn">Economy</button></a></li>
+            <li><a href=""><button class="btn">Sports</button></a></li>
+            <li><a href=""><button class="btn">Culture</button></a></li>
+  </ul>
+  <div id="search-container">
+    <form action="action_page.php">
+      <input type="text" placeholder="Sök" name="search">
+      <a href="#"><img src="images/search.png" id="searchimg" /></a>
+    </form>
+  </div>
+</nav>
+<section id="non-menu" onclick="document.getElementById('navbar-container').style.top = '-150px'">
+  <main>
+    <div class="page">
+      <section class="box1"><img id=img1 src="images/box1.jpg"> 
+        <figcaption class="text-section"><p><h4><hover>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatibus animi, quisquam in accusamus ut atque nesciunt aperiam excepturi cumque!</hover></h4></p></figcaption>
+      </section>
+      <section class="box2"><img id=img2 src="images/box2.jpg">
+        <figcaption class="text-section"><p><h4><hover>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, beatae.</hover></h4></p></figcaption>
+      </section>
+
+    <section class="box3"><img id=img3 src="images/box-2-extra.jpg">
+      <figcaption class="text-section"><p><h4><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, officia.</hover></h4></p></figcaption>
+    </section>
+
+      <section class="box4"><img id=img4 src="images/box3.jpg">
+        <figcaption class="text-section"><p><h4><hover>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cupiditate?</h4></hover></p></figcaption>
+      </section>
+
+    <section class="box5"><img id=img5 src="images/box-3-extra.jpg">
+      <figcaption class="text-section"><p><h4><hover>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, autem!</h4></hover></p></figcaption>
+    </section>
+
+   
+
+      <section class="box6">
+        <p><h2 id="headingbox6">Most Read</h2>
+
+            <h2 id="aside6-1">1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+
+                  <hr>
+
+              <h2 id="aside6-2">2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+
+                  <hr>
+
+              <h2 id="aside6-3">3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                <hr>
+
+              <h2 id="aside6-4">4</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            
+                <hr>
+
+              <h2 id="aside6-5">5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+
+                <hr>
+
+              <h2 id="aside6-6">6</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            
+                <hr>
+            
+              <h2 id="aside6-7">7</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+
+      </section>
+
+    </div>
+
+      <section class="box7">
+
+        <div id="firstAddContainer">
+          <div class="slideImages" id="slideInit">
+              <img src="images/addImage1.jpg">
+          </div>
+          <div class="slideImages">
+              <img src="images/addImage2.jpg">
+          </div>
+          <div class="slideImages">
+              <img src="images/addImage3.jpg">
+          </div>                            
+        </div>
+        <p id=advertisement>Advertisement</p>
+      </section>
+ 
+      <section class="box8"><img src="images/box5.jpg">
+      
+        <div id=b8-1><h4>US PROTEST 6min ago</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolores deserunt enim perspiciatis vero dignissimos!
+        </p></div>
+      </section>
+
+      <section class="box9"><img src="images/box6.jpg"> 
+
+      <div id=b9-1> <h4> IMMIGRATION 30min ago</h4> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, suscipit? </p></div>
+     
+      </section>
+
+
+
+
+
+
+
+
+
+<!--
+      <section class="box7"><img src="images/box7.jpg"> </section>
+      
+      <section class="box7-1"><h4><p><span id=heading-box7-1><hover>SWEDISH ELECTIONS</span><span id="heading-box7-1-1"><hover> 55min ago</span></p></h4> <p id=box7-1-text><b><hover>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facilis! Magnam odio veritatis fugiat ullam numquam consequuntur, consequatur dolor exercitationem?
+      </b></p></hover></hover></hover>
+      
+      </section>
+      
+      <section class="box8"><img src="images/box8.jpg">   
+      </section>
+        <section class="box8-1"><h4><p><span id=heading-box8-1>CORONAVIRUS</span><span id="heading-box8-1-1"> 1h <id> ago</span></p></h4> <p id=box8-1-text><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facilis! Magnam odio veritatis fugiat ullam numquam consequuntur, consequatur dolor exercitationem?
+        </b></p> 
+        </section>
+
+        <section class="button">
+          <button onclick="myFunction()" id="myBtn">Show more</button>
+        </section>
+
+<div class="show-more">
+
+        <section class="box9">   
+          
+          <iframe width="200" height="100" src="https://www.youtube.com/embed/c8aFcHFu8QM?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+          </section>
+
+          
+
+          <section class="box9-1">
+            <h4><p><span id=heading-box9-1>VIDEO</span><span id="heading-box9-1-1"> 2h ago</span></p></h4> <p id=box9-1-text><b>Lorem ipsum dolor sit amet consectetur<span id="dots"> adipisicing elit. Rerum, facilis! Magnam odio veritatis fugiat ullam numquam consequuntur, consequatur dolor exercitationem?
+            </b></p></span><span id="more"></span>
+
+          </section>
+
+            <section class="box10"> <img src="images/box10.jpg">
+              
+            </section>
+            <section class="box10-1">
+              <h4><p><span id=heading-box10-1>GEORGE FLOYD</span><span id="heading-box10-1-1"> 4h ago</span></p></h4> <p id=box10-1-text><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facilis! Magnam odio veritatis fugiat ullam numquam consequuntur, consequatur dolor exercitationem?
+              </b></p>
+        
+            
+          </section>
+
+          <section class="box11"> <img src="images/box11.jpg">
+              
+          </section>
+
+          <section class="box11-1">
+            <h4><p><span id=heading-box11-1>MARKETS</span><span id="heading-box11-1-1"> 6h ago</span></p></h4> <p id=box11-1-text><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facilis! Magnam odio veritatis fugiat ullam numquam consequuntur, consequatur dolor exercitationem?
+            </b></p>
+      
+          
+        </section>
+
+        <section class="box12"> <img src="images/box12.jpg">
+              
+        </section>
+
+        <section class="box12-1">
+          <h4><p><span id=heading-box12-1>HURRICANES-TYPHOONS</span><span id="heading-box12-1-1"> 7h ago</span></p></h4> <p id=box12-1-text><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facilis! Magnam odio veritatis fugiat ullam numquam consequuntur, consequatur dolor exercitationem?
+          </b></p>
+    
+        
+      </section>
+         
+
+
+
+      </div> -->
+
+
+       <!--  <div><p><h4><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</hover></h4></p></div>
+      </section>
+      
+      <section class="box7"><img src="images/box7.jpg">
+        <div><p><h4><hover>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sunt voluptatum delectus similique tenetur quis magni impedit odio maiores animi?</hover></h4></p></div>
+      </section>
+
+      <section class="box8">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides" id="myslidesInit">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/img1.jpg" style="width:100%">
+              <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, rerum?</div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/img2.jpg" style="width:100%">
+              <div class="text">Lorem ipsum</div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/img3.jpg" style="width:100%">
+              <div class="text">Lorem ipsum</div>
+            </div>
+            <a class="prev" onclick="plusSlidesx(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesx(1)">&#10095;</a>
+        </div>
+          
+      </section>
+      <aside class="box9">
+
+        <section class="aside-section-1"><div><p><h4><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</hover></h4></p></div></section>
+        <section class="aside-section-2"><div><p><h4><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</hover></h4></p></div></section>
+        <section class="aside-section-3"><div><p><h4><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</hover></h4></p></div></section>
+
+      </aside>
+      <section class="box12"><h2>In Case You Missed It</h2> <br><br>
+        <img class="image" src="images/box12.jpg">
+        <div class="sidetext"><p><h4><hover>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, explicabo consectetur facilis nulla dolorum quidem. Vitae adipisci assumenda in necessitatibus?</hover></h4></p></div>
+      </section> -->
+<!--   
+    </section> -->
+
+  </main>
+<footer>
+    <section id="top-footer" class="footersection">
+      <a href=""><img src="images/rss.png"></a>
+      <a href=""><img src="images/instagram.png"></a>
+      <a href=""><img src="images/facebook.png"></a>
+      <a href=""><img src="images/youtube.png"></a>
+      <a href=""><img src="images/twitter.png"></a>
+    </section>
+    <section id="middle-footer" class="footersection">
+      <div id="left-bottomlinks">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="politics.html">Politics</a></li>
+            <li><a href="">Economy</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+        </div>
+        <div id="middle-bottomlinks">
+        <ul>
+            <li><a href="">Europe</a></li>
+            <li><a href="">North America</a></li>
+            <li><a href="">Asia</a></li>
+            <li><a href="">Africa</a></li>
+            <li><a href="">South America</a></li>
+        </ul>
+        </div>
+        <div id="right-bottomlinks">
+        <ul>    
+            <li><a href="">Documentaries</a></li>
+            <li><a href="">Interviews</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Watch Live</a></li>
+            <li><a href="">Images</a></li>
+        </ul>
+        </div>
+        <div id="right2-bottomlinks">
+            <ul>    
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Terms of use</a></li>
+                <li><a href="">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="bottom-footer" class="footersection"><small>© Copyright 2020 OurNews. All rights reserved.</small></section>
+</footer>
+</section>
+</body>
+<!-- <script src="js/script.js"></script> -->
+<script src="js/politics.js"></script>
+</html>
